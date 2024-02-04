@@ -51,7 +51,7 @@ Enter Script mode (1, 2,)
             elif st == 2:
                 subprocess.run(["sudo", "nmap", "--script", "tftp-version", "-p", port, IP])
             else:
-                print(Bcolor.RED +"[-] Invalid option. Please select either 1 to 8.")
+                print(Bcolor.RED +"[-] Invalid option. Please select either 1 or 2.")
         except Exception as e:
             print(Bcolor.RED + f"[-] Error during initialization: {str(e)}")
 
